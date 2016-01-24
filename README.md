@@ -1,0 +1,2 @@
+# TipsCalculator
+Init project
