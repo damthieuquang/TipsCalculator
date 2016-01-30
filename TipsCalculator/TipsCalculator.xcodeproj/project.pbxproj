@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09B304EF1C5CF96C00AEE6E5 /* PercentTipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B304ED1C5CF96C00AEE6E5 /* PercentTipTableViewCell.swift */; };
+		09B304F01C5CF96C00AEE6E5 /* PercentTipTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B304EE1C5CF96C00AEE6E5 /* PercentTipTableViewCell.xib */; };
 		09CA90DB1C55077D0075FF36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CA90DA1C55077D0075FF36 /* AppDelegate.swift */; };
-		09CA90DD1C55077D0075FF36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CA90DC1C55077D0075FF36 /* ViewController.swift */; };
+		09CA90DD1C55077D0075FF36 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CA90DC1C55077D0075FF36 /* TipViewController.swift */; };
 		09CA90E01C55077D0075FF36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09CA90DE1C55077D0075FF36 /* Main.storyboard */; };
 		09CA90E21C55077D0075FF36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09CA90E11C55077D0075FF36 /* Assets.xcassets */; };
 		09CA90E51C55077D0075FF36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09CA90E31C55077D0075FF36 /* LaunchScreen.storyboard */; };
@@ -16,9 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09B304ED1C5CF96C00AEE6E5 /* PercentTipTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PercentTipTableViewCell.swift; sourceTree = "<group>"; };
+		09B304EE1C5CF96C00AEE6E5 /* PercentTipTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PercentTipTableViewCell.xib; sourceTree = "<group>"; };
 		09CA90D71C55077D0075FF36 /* TipsCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipsCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09CA90DA1C55077D0075FF36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		09CA90DC1C55077D0075FF36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09CA90DC1C55077D0075FF36 /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
 		09CA90DF1C55077D0075FF36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09CA90E11C55077D0075FF36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09CA90E41C55077D0075FF36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,12 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				09CA90DA1C55077D0075FF36 /* AppDelegate.swift */,
-				09CA90DC1C55077D0075FF36 /* ViewController.swift */,
+				09CA90DC1C55077D0075FF36 /* TipViewController.swift */,
+				09CA90EC1C5507A00075FF36 /* SettingsViewController.swift */,
 				09CA90DE1C55077D0075FF36 /* Main.storyboard */,
 				09CA90E11C55077D0075FF36 /* Assets.xcassets */,
 				09CA90E31C55077D0075FF36 /* LaunchScreen.storyboard */,
 				09CA90E61C55077D0075FF36 /* Info.plist */,
-				09CA90EC1C5507A00075FF36 /* SettingsViewController.swift */,
+				09B304ED1C5CF96C00AEE6E5 /* PercentTipTableViewCell.swift */,
+				09B304EE1C5CF96C00AEE6E5 /* PercentTipTableViewCell.xib */,
 			);
 			path = TipsCalculator;
 			sourceTree = "<group>";
@@ -127,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09CA90E51C55077D0075FF36 /* LaunchScreen.storyboard in Resources */,
+				09B304F01C5CF96C00AEE6E5 /* PercentTipTableViewCell.xib in Resources */,
 				09CA90E21C55077D0075FF36 /* Assets.xcassets in Resources */,
 				09CA90E01C55077D0075FF36 /* Main.storyboard in Resources */,
 			);
@@ -139,7 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09CA90DD1C55077D0075FF36 /* ViewController.swift in Sources */,
+				09CA90DD1C55077D0075FF36 /* TipViewController.swift in Sources */,
+				09B304EF1C5CF96C00AEE6E5 /* PercentTipTableViewCell.swift in Sources */,
 				09CA90DB1C55077D0075FF36 /* AppDelegate.swift in Sources */,
 				09CA90ED1C5507A00075FF36 /* SettingsViewController.swift in Sources */,
 			);
@@ -291,6 +299,7 @@
 				09CA90EB1C55077D0075FF36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
