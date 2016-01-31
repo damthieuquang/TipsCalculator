@@ -23,6 +23,7 @@
                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                         <connections>
                             <action selector="editingBegin:" destination="KGk-i7-Jjw" eventType="editingDidBegin" id="VDS-Dl-AT2"/>
+                            <action selector="editingChanged:" destination="KGk-i7-Jjw" eventType="editingChanged" id="DF9-qs-le1"/>
                             <action selector="endingEdit:" destination="KGk-i7-Jjw" eventType="editingDidEnd" id="0Yh-eM-d6g"/>
                         </connections>
                     </textField>

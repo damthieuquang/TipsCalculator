@@ -43,16 +43,28 @@ class PercentTipTableViewCell: UITableViewCell {
         txt_percent.text = _percent
     }
 
-    @IBAction func endingEdit(sender: UITextField) {
+    @IBAction func editingChanged(sender: AnyObject) {
+        /**
+        *  Update new value immediately when it shifts
+        */
         if (lbl_level.text == "Minimum") {
             NSUserDefaults.standardUserDefaults().setFloat((txt_percent.text! as NSString).floatValue, forKey: "firstSegment")
-            NSNotificationCenter.defaultCenter().postNotificationName("updateValue", object: 0)
         } else if (lbl_level.text == "Medium") {
             NSUserDefaults.standardUserDefaults().setFloat((txt_percent.text! as NSString).floatValue, forKey: "secondSegment")
-            NSNotificationCenter.defaultCenter().postNotificationName("updateValue", object: 1)
-
         } else {
             NSUserDefaults.standardUserDefaults().setFloat((txt_percent.text! as NSString).floatValue, forKey: "thirdSegment")
+        }
+    }
+    
+    @IBAction func endingEdit(sender: UITextField) {
+        /**
+        *  Notify to table view for updating its status
+        */
+        if (lbl_level.text == "Minimum") {
+            NSNotificationCenter.defaultCenter().postNotificationName("updateValue", object: 0)
+        } else if (lbl_level.text == "Medium") {
+            NSNotificationCenter.defaultCenter().postNotificationName("updateValue", object: 1)
+        } else {
             NSNotificationCenter.defaultCenter().postNotificationName("updateValue", object: 2)
         }
     }
